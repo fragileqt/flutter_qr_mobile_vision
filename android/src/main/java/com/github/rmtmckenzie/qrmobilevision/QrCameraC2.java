@@ -202,7 +202,7 @@ class QrCameraC2 implements QrCamera {
 
             previewBuilder.set(CaptureRequest.CONTROL_MODE, CameraMetadata.CONTROL_MODE_AUTO);
 
-            if (afMode != null) {
+            /*if (afMode != null) {
                 previewBuilder.set(CaptureRequest.CONTROL_AF_MODE, afMode);
                 Log.i(TAG, "Setting af mode to: " + afMode);
                 if (afMode == CONTROL_AF_MODE_AUTO) {
@@ -210,7 +210,7 @@ class QrCameraC2 implements QrCamera {
                 } else {
                     previewBuilder.set(CaptureRequest.CONTROL_AF_TRIGGER, CaptureRequest.CONTROL_AF_TRIGGER_CANCEL);
                 }
-            }
+            }*/
 
         } catch (java.lang.Exception e) {
             e.printStackTrace();
